@@ -49,6 +49,7 @@
 		<spring-boot.version>1.2.3.RELEASE</spring-boot.version>
 		<!-- <spring.version>4.1.6.RELEASE</spring.version> -->
 		<!-- <spring.data.jpa.version>1.7.2.RELEASE</spring.data.jpa.version> -->
+		<!-- <spring.security.version>4.0.3.RELEASE</spring.security.version> -->
 		<!-- <org.slf4j.version>1.7.11</org.slf4j.version> -->
 		<!-- <logback.version>1.1.2</logback.version> -->
 		<!-- <junit.version>4.12</junit.version> -->
@@ -123,6 +124,8 @@
 		  Turn on filtering by default for application properties.
 		  
 		  ** This was copied from the "spring-boot-starter-parent" POM file. **
+		  **
+		  ** See: http://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent
 		 -->
 		<resources>
 			<resource>
@@ -145,6 +148,7 @@
 		<pluginManagement>
 			<plugins>
 			
+				<!-- Jeffrey Zelt: I added this: -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
