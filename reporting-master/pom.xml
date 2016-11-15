@@ -43,6 +43,21 @@
         <system>JIRA</system>
         <url>https://issues.q-free.com:8443/browse/QF15203</url>
     </issueManagement>
+    
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal release repository</name>
+            <layout>default</layout>
+            <url>https://nexus.q-free.com/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Internal snapshot repository</name>
+            <layout>default</layout>
+            <url>https://nexus.q-free.com/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>    
 
     <properties>
         <java.version>1.8</java.version>
